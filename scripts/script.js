@@ -11,12 +11,12 @@ const tempoNaTela = document.querySelector("#timer");
 const btIconeiniciarOuPausar = document.querySelector(".app__card-primary-butto-icon");
 
 const musicaFocoInput = document.querySelector("#alternar-musica");
-const musica = new Audio("../sons/luna-rise-part-one.mp3");
-const audioPlay = new Audio("../sons/play.wav");
-const audioPause = new Audio("../sons/pause.mp3");
-const audioBeep = new Audio("../sons/beep.mp3");
+const musica = new Audio("./sons/luna-rise-part-one.mp3");
+const audioPlay = new Audio("./sons/play.wav");
+const audioPause = new Audio(". /sons/pause.mp3");
+const audioBeep = new Audio("./sons/beep.mp3");
 
-let tempoDecorridoEmSegundos = 1500;
+let tempoDecorridoEmSegundos = 0;
 let intervaloId = null;
 
 musica.loop = true;
@@ -30,19 +30,19 @@ musicaFocoInput.addEventListener("change", () => {
 });
 
 btFoco.addEventListener("click", () => {
-    tempoDecorridoEmSegundos = 1500;
+    tempoDecorridoEmSegundos = 30;
     alterarContexto("foco");
     btFoco.classList.add("active");
 });
 
 btCurto.addEventListener("click", () => {
-    tempoDecorridoEmSegundos = 300;
+    tempoDecorridoEmSegundos = 15;
     alterarContexto("descanso-curto"); 
     btCurto.classList.add("active");
 });
 
 btLongo.addEventListener("click", () => {
-    tempoDecorridoEmSegundos = 900;
+    tempoDecorridoEmSegundos = 50;
     alterarContexto("descanso-longo");
     btLongo.classList.add("active");
 });
@@ -79,6 +79,11 @@ const contagemRegressiva = () => {
     if(tempoDecorridoEmSegundos <= 0) {
         audioBeep.play();
         alert("Tempo Finalizado!");
+        const focoAtivo = html.getAttribute('data-contexto') == "foco";        
+        if (focoAtivo) {
+            const evento = new CustomEvent('FocoFinalizado');
+            document.dispatchEvent(evento);
+        }
         zerar();
         return;
     }
