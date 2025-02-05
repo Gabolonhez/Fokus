@@ -8,16 +8,14 @@ Fokus é um site desenvolvido para otimizar sua produtividade, podendo iniciar u
 
 ## 🎯 Funcionalidades
 
-- [x] ``: Contagem de tempo de foco <br>
-- [x] ``: Lista de tarefas 
+- [x] : Contagem de tempo de foco <br>
+- [x] : Lista de tarefas 
 
 ## 💻 Tecnologias 
 
-`HTML`: Linguagem utilizada para desenvolver a as páginas do aplicativo.
-
-`CSS`: Utilizado para estilização da interface do aplicativo.
-
-`JavaScript`: Linguagem de programação utilizada para desenvolver a lógica do aplicativo.
+- `HTML`
+- `CSS`
+- `JavaScript`
 
 ## 🚧 Licença
 
