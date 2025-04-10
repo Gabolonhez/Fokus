@@ -4,7 +4,7 @@
 
 ## 📑 Descrição
 
-Fokus é um site desenvolvido para otimizar sua produtividade, podendo iniciar uma contagem para focar em diferentes estilos e tempos, permitindo também adicionar uma lista de tarefas.
+Site desenvolvido para otimizar sua produtividade, podendo iniciar uma contagem para focar em diferentes estilos e tempos, permitindo também adicionar uma lista de tarefas.
 
 ## 🎯 Funcionalidades
 
