@@ -23,4 +23,4 @@ Este projeto esta sobe a licença [MIT](./LICENSE).
 
 ## 🌐 Link do deploy
 
-
+https://gabolonhez.github.io/Fokus/
