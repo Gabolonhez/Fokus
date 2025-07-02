@@ -17,10 +17,10 @@ Site desenvolvido para otimizar sua produtividade, podendo iniciar uma contagem 
 - `CSS`
 - `JavaScript`
 
-## 🚧 Licença
-
-Este projeto esta sobe a licença [MIT](./LICENSE).
-
 ## 🌐 Link do deploy
 
 https://gabolonhez.github.io/Fokus/
+
+## 🚧 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
